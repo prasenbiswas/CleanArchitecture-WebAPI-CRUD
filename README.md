@@ -72,8 +72,8 @@ This project demonstrates how to build a Web API in .NET Core 8 with support for
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/prasenbiswas/CleanArchitecture-WebAPI-CRUD.git
+   cd CleanArchitecture-WebAPI-CRUD
    ```
 
 2. **Build and Run**  
@@ -83,6 +83,5 @@ This project demonstrates how to build a Web API in .NET Core 8 with support for
    ```
 
 3. **Explore the API**  
-   Open [Swagger UI](http://localhost:5000/swagger) to test the endpoints.
-
+   Open Swagger UI to test the endpoints.
 ---
