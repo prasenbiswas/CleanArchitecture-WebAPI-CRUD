@@ -71,7 +71,7 @@ Follow these steps to set up and run the project locally:
 
 - **Visual Studio** (2022 or later)
 - **.NET Core 8 SDK**
-- **SQL Server**
+- **SQL Server** (or the specified database provider)
 - **Entity Framework Core Tools**
 
 ## Getting Started
@@ -83,20 +83,34 @@ Follow these steps to set up and run the project locally:
    cd CleanArchitecture-WebAPI-CRUD
    ```
 
-2. **Open in Visual Studio**  
+2. **Update Connection String**  
+   - Navigate to the `appsettings.json` file in the Web API project.  
+   - Update the `ConnectionStrings` section with your database details. Example:  
+     ```json
+     "ConnectionStrings": {
+       "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=YOUR_DATABASE_NAME;Trusted_Connection=True;MultipleActiveResultSets=true"
+     }
+     ```
+   - Replace `YOUR_SERVER_NAME` and `YOUR_DATABASE_NAME` with your actual database server name and database name.
+
+3. **Open in Visual Studio**  
    Open the `.sln` file in Visual Studio.
 
-3. **Apply Migrations**  
+4. **Apply Migrations**  
    - Open the **Package Manager Console** from the **Tools > NuGet Package Manager > Package Manager Console** menu.
-   - In the **Default project** dropdown, select the **Infrastructure** layer (the layer containing the DbContext and migrations).
+   - In the **Default project** dropdown, select the **Infrastructure** layer (the layer containing the `DbContext` and migrations).
    - Run the following command to apply the database migrations:  
      ```powershell
      Update-Database
      ```
 
-4. **Run the Project**  
+5. **Run the Project**  
    - Press `F5` or click the **Run** button in Visual Studio.
    - The API will be hosted locally (e.g., `https://localhost:5001`).
 
-5. **Test the API**  
+6. **Test the API**  
    Use Swagger UI or your preferred API testing tool (e.g., Postman) to explore the endpoints.
+
+---
+
+This README now includes instructions for updating the connection string, ensuring that users can set up their environment properly. Let me know if you need additional changes!
