@@ -84,4 +84,3 @@ This project demonstrates how to build a Web API in .NET Core 8 with support for
 
 3. **Explore the API**  
    Open Swagger UI to test the endpoints.
----
