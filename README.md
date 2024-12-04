@@ -9,20 +9,8 @@ Clean Architecture is a software design principle that organizes code to achieve
 - **Testability**: Allows for isolated testing of application components.  
 - **Maintainability**: Makes it easier to understand and modify the codebase over time.  
 
-### **Core Principles**
-
-1. **Independent of Frameworks**  
-   The architecture does not depend on external libraries or frameworks, making it adaptable and portable.
-
-2. **Testability**  
-   Business rules and logic can be tested independently of other layers.  
-
-3. **Separation of Concerns**  
-   Divides the application into layers to ensure that changes in one layer do not impact others unnecessarily.  
-
-4. **Dependency Rule**  
-   Higher-level modules (business rules) do not depend on lower-level modules (infrastructure, frameworks). Instead, dependencies flow inward.  
-
+--- 
+![image](https://github.com/user-attachments/assets/0b6a536e-295e-4a45-9e9d-878e9d3b55c1)
 ---
 
 ### **Clean Architecture Layers**
@@ -38,8 +26,6 @@ Clean Architecture is a software design principle that organizes code to achieve
 3. **Infrastructure Layer**  
    - Handles database access, external APIs, and third-party integrations.  
    - Contains Entity Framework DbContext and migrations.    
-![image](https://github.com/user-attachments/assets/0b6a536e-295e-4a45-9e9d-878e9d3b55c1)
-
 ---
 
 ### **Advantages of Clean Architecture**
