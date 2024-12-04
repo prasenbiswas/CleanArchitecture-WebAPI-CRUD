@@ -34,5 +34,55 @@ Clean Architecture is a software design principle that organizes code to achieve
 - Facilitates testing by isolating business rules from frameworks.  
 - Enhances flexibility for switching or upgrading frameworks and tools.  
 - Improves maintainability and scalability of the application.   
+---
 
---- 
+# .NET Core 8 Web API - CRUD Operations
+
+This project demonstrates how to build a Web API in .NET Core 8 with support for Create, Read, Update, and Delete (CRUD) operations. It is designed as a reference for building RESTful APIs using the latest .NET Core features and best practices.
+
+## Features
+
+- **Entity Framework Core** for database interaction.
+- **Dependency Injection** to manage services and repositories.
+- **RESTful Endpoints** for CRUD operations.
+
+## Endpoints Overview
+
+1. **Create**: Adds a new record to the database.  
+   `POST /api/[controller]`
+
+2. **Read**: Retrieves data from the database.  
+   - Get all: `GET /api/[controller]`  
+   - Get by ID: `GET /api/[controller]/{id}`
+
+3. **Update**: Modifies an existing record.  
+   `PUT /api/[controller]/{id}`
+
+4. **Delete**: Removes a record from the database.  
+   `DELETE /api/[controller]/{id}`
+
+## Technologies Used
+
+- .NET Core 8
+- Entity Framework Core
+- SQL Server (Configurable)
+- Swagger
+
+## Getting Started
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Build and Run**  
+   ```bash
+   dotnet build
+   dotnet run
+   ```
+
+3. **Explore the API**  
+   Open [Swagger UI](http://localhost:5000/swagger) to test the endpoints.
+
+---
