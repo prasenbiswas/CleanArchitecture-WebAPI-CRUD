@@ -61,26 +61,42 @@ This project demonstrates how to build a Web API in .NET Core 8 with support for
 4. **Delete**: Removes a record from the database.  
    `DELETE /api/[controller]/{id}`
 
-## Technologies Used
+--- 
 
-- .NET Core 8
-- Entity Framework Core
-- SQL Server (Configurable)
-- Swagger
+## Getting Started
+
+Follow these steps to set up and run the project locally:
+
+## Prerequisites
+
+- **Visual Studio** (2022 or later)
+- **.NET Core 8 SDK**
+- **SQL Server**
+- **Entity Framework Core Tools**
 
 ## Getting Started
 
 1. **Clone the Repository**  
+   Clone the repository to your local machine using the following command:  
    ```bash
    git clone https://github.com/prasenbiswas/CleanArchitecture-WebAPI-CRUD.git
    cd CleanArchitecture-WebAPI-CRUD
    ```
 
-2. **Build and Run**  
-   ```bash
-   dotnet build
-   dotnet run
-   ```
+2. **Open in Visual Studio**  
+   Open the `.sln` file in Visual Studio.
 
-3. **Explore the API**  
-   Open Swagger UI to test the endpoints.
+3. **Apply Migrations**  
+   - Open the **Package Manager Console** from the **Tools > NuGet Package Manager > Package Manager Console** menu.
+   - In the **Default project** dropdown, select the **Infrastructure** layer (the layer containing the DbContext and migrations).
+   - Run the following command to apply the database migrations:  
+     ```powershell
+     Update-Database
+     ```
+
+4. **Run the Project**  
+   - Press `F5` or click the **Run** button in Visual Studio.
+   - The API will be hosted locally (e.g., `https://localhost:5001`).
+
+5. **Test the API**  
+   Use Swagger UI or your preferred API testing tool (e.g., Postman) to explore the endpoints.
