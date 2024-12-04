@@ -38,6 +38,7 @@ Clean Architecture is a software design principle that organizes code to achieve
 3. **Infrastructure Layer**  
    - Handles database access, external APIs, and third-party integrations.  
    - Contains Entity Framework DbContext and migrations.    
+![image](https://github.com/user-attachments/assets/0b6a536e-295e-4a45-9e9d-878e9d3b55c1)
 
 ---
 
