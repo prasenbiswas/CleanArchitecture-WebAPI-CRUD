@@ -110,7 +110,3 @@ Follow these steps to set up and run the project locally:
 
 6. **Test the API**  
    Use Swagger UI or your preferred API testing tool (e.g., Postman) to explore the endpoints.
-
----
-
-This README now includes instructions for updating the connection string, ensuring that users can set up their environment properly. Let me know if you need additional changes!
